@@ -125,3 +125,14 @@
         "WONK" 1;
         line-height: normal;
     }
+
+    p{
+        /* Margins essentially act like paragraph spacing in this instance */
+        margin-bottom: 12px;
+        /* This sets the font for all <p>, unless otherwsie specified */
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
