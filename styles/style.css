@@ -15,7 +15,7 @@
 
     header{
         display: flex;
-        height: 256px;
+        height: 200px;
         padding: 10px;
         justify-content: center;
         align-items: center;
@@ -27,7 +27,7 @@
         font-family: "Fraunces", serif;
         font-size: 64px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         font-variation-settings:
         "SOFT" 100,
         "WONK" 1;
@@ -37,7 +37,8 @@
     main{
         display: flex;
         padding: 10px;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         gap: 10px;
         flex: 1 0 0;
         align-self: stretch;
@@ -52,12 +53,12 @@
         gap: 10px;
         flex-shrink: 0;
         align-self: stretch;        
-        color: #323232;
+        color: #5b5b5b;
         text-align: center;
         font-family: "Fraunces", serif;
         font-size: 24px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 200;
         font-variation-settings:
         "SOFT" 50,
         "WONK" 1;
@@ -81,9 +82,13 @@
         height: 350px;
         border-radius: 41px;
         background: #D3FFDA;
-        box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35);
+        /*box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35);*/
         /*overflow hides content outside the bounds set */
         overflow: hidden;
+    }
+
+    .subpage:hover{
+        box-shadow: 4px 4px 8px 0px rgba(94, 60, 60, 0.35);
     }
 
     .subpage-image{
@@ -113,16 +118,12 @@
     }
 
     .subpage-title{
-        color: #FFF;
+        color: #dbff10;
         text-align: center;
-        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-        font-family: "Fraunces", serif;
-        font-size: 48px;
+        font-family: "fraunces", sans-serif;
+        font-size: 32px;
         font-style: normal;
-        font-weight: 200;
-        font-variation-settings:
-        "SOFT" 100,
-        "WONK" 1;
+        font-weight: 100;
         line-height: normal;
     }
 
@@ -130,14 +131,90 @@
         /* Margins essentially act like paragraph spacing in this instance */
         margin-bottom: 12px;
         /* This sets the font for all <p>, unless otherwsie specified */
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 20px;
+        font-family: "Open Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
         font-style: normal;
-        font-weight: 400;
-        line-height: normal;
     }
 
     courselog {
         padding: 70px;
         border: 1px solid #4CAF50;
-      }
+    }
+
+/* FOR THE RESPONSIVE HEADER */
+/* Style the header with a grey background and some padding */
+    .header {
+        overflow: hidden;
+        padding: 20px 10px;
+    }
+
+  /* Style the header links */
+    .header a {
+        float: left;
+        color: rgb(207, 207, 207);
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 32px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+
+  /* Change the background color on mouse-over */
+    .header a:hover {
+        color: rgb(146, 29, 66);
+    }
+
+    /* Style the active/current link*/
+    .header a.active {
+        font-weight: bold;
+        color: rgb(146, 29, 66);
+    }
+
+    /* FOR COURSE LOG */
+    hr{
+        border: 0;
+        width:100%;
+        border-bottom: .5px solid #dbd0cb;
+        margin: 2em 0em 2em 0em;
+    }
+
+    .entry {
+        max-width: 900px;
+        padding: 100px;
+    }
+
+    .intro{
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    #subtitle {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color:rgb(146, 29, 66);
+        text-transform: uppercase;
+    }
+
+    .mainContentColumn{
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        font-family: "Fraunces", serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 200;
+        font-variation-settings:
+        "SOFT" 100,
+        "WONK" 1;
+        line-height: normal;
+    }
