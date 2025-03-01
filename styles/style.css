@@ -127,6 +127,19 @@
         line-height: normal;
     }
 
+    .img-container{
+        display: flex;
+        padding-top:0px;
+        padding: bottom 0px;
+        padding-left: 64px;
+        padding-right: 64px;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
     p{
         /* Margins essentially act like paragraph spacing in this instance */
         margin-bottom: 12px;
