@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="vendor/bmc3dviewer/css/bmc3dviewer.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -89,18 +90,7 @@
                 </p>
                 <hr>
             </div>
-                        <!--WEEK 5-->
-            <div class="intro">
-                <div id="subtitle">Lecture 5</div>
-                <h1>Web Dev 105</h1>
-            </div>
-            <div class="mainContentColumn">
-                <br>
-                <p>
-                    An important takeaway from this class: It's important to think about accessibility and your audience when designing scrollytelling sites. Some sites we saw for the media lab had really small font or used too many animated elements that could be difficult for viewers with motionsickness. Scrollytelling is used for linear narratives.
-                </p>
-                <hr>
-            </div>
+
             <!--WEEK 6-->
             <div class="intro">
                 <div id="subtitle">Lecture 6</div>
@@ -166,7 +156,39 @@
                 </div>
                 <hr>
             </div>
+
+
+            <!--WEEK 5-->
+            <div class="intro">
+                <div id="subtitle">Lecture 5</div>
+                <h1>Web Dev 105</h1>
+            </div>
+            <div class="mainContentColumn">
+                <br>
+                <div class='bmc_3dviewer'
+                data-src='[{"path":"../3Dimages/duck-duck.glb", "name":"duck-duck"}]'
+        
+                data-debug='true' 
+                data-min-zoom='0.006'
+                data-max-zoom='2.0'
+                data-background-colour='0xffffff' 
+                data-reset-view-btn='true' 
+                data-ortho-cam-size='1.0'
+                data-key-light-intensity='9.0'
+                data-fill-light-intensity='3.0'
+                data-initial-orientation='{"x":0, "y":0, "z":-10}'></div>
+                <p>
+                    <a href="https://sketchfab.com/3d-models/duck-duck-98604d4f895b4fc79d880dd427bf3a01?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=98604d4f895b4fc79d880dd427bf3a01" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Duck-Duck </a>
+                    by
+                    <a href="https://sketchfab.com/td991?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=98604d4f895b4fc79d880dd427bf3a01" target="_blank" rel="nofollow" style="font-weight: regular; color: #1CAAD9;"> td991 </a>
+                    on
+                    <a href="https://sketchfab.com?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=98604d4f895b4fc79d880dd427bf3a01" target="_blank" rel="nofollow" style="font-weight: regular; color: #1CAAD9;">Sketchfab</a>
+                </p>
+                <hr>
+            </div>
+
         </div>
+
     </main>
     
 
@@ -191,6 +213,8 @@
         });
 
     </script>
+
+    <script type="module" src="../vendor/bmc3dviewer/main.js"></script>
 
 <footer> &copy; 2025 Emily Huang </footer>
 
