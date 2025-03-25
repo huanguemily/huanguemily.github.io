@@ -336,9 +336,6 @@ div.bmc_3dviewer div.overlay {
     fill: #6666FF;
     stroke: none;
 }
-.bmc_3dviewer input.load_btn {
-
-}
 .bmc_3dviewer div.loadButtonContainer, .bmc_3dviewer div.cameraControls, .bmc_3dviewer div.labelToggle {
     user-select: none;
     -webkit-user-select: none;
